@@ -1,0 +1,93 @@
+* {
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	transition: all .1s ease-in;
+}
+
+html {
+	height: 100%;
+	
+}
+
+body {
+	background-color: #3B3F45;
+	font-size: 24px;
+	min-height: 100%;
+	border: 20px solid #fff;
+	box-sizing: border-box;
+}
+
+
+header {
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.shoping-list {
+	list-style: none;
+	width: 50%;
+	margin: 30px auto;
+}
+
+.shoping-list li {
+	background-color: #88839e;
+	color:#fff;
+}
+
+.shoping-list li:nth-child(even) {
+	background-color: #7a7593;
+}
+
+.shoping-list label {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.shoping-list [type="checkbox"]{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 3px;
+	
+}
+
+.shoping-list label:hover {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #625e77;
+}
+
+.shoping-list label:active {
+	background-color: #eb7e7f;
+}
+
+.shoping-list input[type="checkbox"]:checked ~ span{
+	color: #a49eb2;
+	text-decoration: line-through;
+}
+
+.small {
+	color: #CAB9B6;
+	font-size: 14px;
+}
+
+.small::before {
+	content: "("
+}
+
+.small::after {
+	content: ")"
+}
+
+footer {
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
